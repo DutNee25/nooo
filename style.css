@@ -1,0 +1,48 @@
+
+body{background: #919191; 
+  background: linear-gradient(45deg, black, white 30%, #919191);}
+
+  h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 6em;
+    text-align: center;
+    color: black;
+    text-shadow: 5px 5px whitesmoke;
+    margin: 0;
+  }
+
+  p{font-weight: bold;}
+
+#자기소개{clear: both;}
+#본론a{float: left;width: 50%;}
+#본론b{float: left;width: 50%;}
+#본론c{float: left;width: 25%;clear: both;}
+#본론d{float: left;width: 25%;clear: both;}
+#시간표{clear: both; background-color: #333}
+#끝{background: ;color: azure;}
+
+
+ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #333;border-radius: 20px;}
+
+li {float: right;}
+
+li a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
+
+li a:hover {background-color: black;}
+
+table {width: 100%; border-collapse: collapse;background: gray;color: black;}
+  td, th {border: 5px solid #333; padding: 8px; text-align: center;font-style: oblique;}
+  td:hover {background-color: azure;}
+  
+  td[data-content]:hover::before {
+    content: attr(data-content); /* 숨겨진 글씨 */
+    position: absolute;
+    top: 50%; /* 세로 중앙 정렬 */
+    left: 50%; /* 가로 중앙 정렬 */
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1; /* 다른 콘텐츠 위에 나타나도록 설정 */
+}
